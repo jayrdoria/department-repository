@@ -11,8 +11,6 @@ app.use(express.json());
 
 // ✅ Prefix all routes with /department-repository/api
 app.use("/department-repository/api/auth", require("./routes/auth"));
-app.use("/department-repository/api/categories", require("./routes/category"));
-app.use("/department-repository/api/files", require("./routes/fileEntry"));
 
 // ✅ Use PORT from .env
 const PORT = process.env.PORT || 6060;
