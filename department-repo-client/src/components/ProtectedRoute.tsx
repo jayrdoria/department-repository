@@ -14,7 +14,7 @@ const ProtectedRoute = () => {
       if (!token) return setIsValid(false);
 
       try {
-        await axios.get(`${API}/api/auth/validate`, {
+        await axios.get(`${API}/auth/validate`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setIsValid(true);
